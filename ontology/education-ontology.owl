@@ -68,6 +68,9 @@
         <Class IRI="http://purl.org/ontology/bibo/Webpage"/>
     </Declaration>
     <Declaration>
+        <Class IRI="ContactRelation"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="CourseRelation"/>
     </Declaration>
     <Declaration>
@@ -75,6 +78,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="LMS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Office"/>
     </Declaration>
     <Declaration>
         <Class IRI="OrganizationMail"/>
@@ -90,6 +96,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="Teacher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TutoringTime"/>
     </Declaration>
     <Declaration>
         <Class IRI="Unit"/>
@@ -140,6 +149,9 @@
         <ObjectProperty IRI="attends"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="availableIn"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="courses"/>
     </Declaration>
     <Declaration>
@@ -147,6 +159,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="enrolledIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasAccess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasContact"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasGrade"/>
@@ -158,6 +176,9 @@
         <ObjectProperty IRI="hasMail"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasOffice"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasQuiz"/>
     </Declaration>
     <Declaration>
@@ -165,6 +186,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasResult"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTutoring"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasUnit"/>
@@ -203,13 +227,49 @@
         <ObjectProperty IRI="#takesQuiz"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="https://schema.org/alumni"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="https://schema.org/author"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
+        <Class IRI="http://purl.org/ontology/bibo/DocumentPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Specification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/LegalDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/PersonalCommunicationDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/ReferenceSource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Proceedings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/Library"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/CollectedDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Manuscript"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://schema.org/hasCourse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://schema.org/hasCourseInstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Patent"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="http://purl.org/ontology/bibo/AcademicArticle"/>
@@ -360,6 +420,10 @@
         <Class IRI="CourseRelation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="availableIn"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="courses"/>
         <Class IRI="CourseRelation"/>
     </ObjectPropertyDomain>
@@ -372,6 +436,14 @@
         <Class IRI="Student"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasAccess"/>
+        <Class IRI="Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasContact"/>
+        <Class IRI="Teacher"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="hasGrade"/>
         <Class IRI="CourseRelation"/>
     </ObjectPropertyDomain>
@@ -381,7 +453,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasMail"/>
-        <Class IRI="http://dbpedia.org/ontology/Academic"/>
+        <Class IRI="ContactRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasOffice"/>
+        <Class IRI="ContactRelation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasQuiz"/>
@@ -394,6 +470,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasResult"/>
         <Class IRI="QuizRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTutoring"/>
+        <Class IRI="ContactRelation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasUnit"/>
@@ -468,6 +548,10 @@
         <Class IRI="https://schema.org/CourseInstance"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="availableIn"/>
+        <Class IRI="LMS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="courses"/>
         <Class IRI="https://schema.org/Course"/>
     </ObjectPropertyRange>
@@ -478,6 +562,14 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="enrolledIn"/>
         <Class IRI="https://schema.org/EducationalOccupationalProgram"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasAccess"/>
+        <Class IRI="LMS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasContact"/>
+        <Class IRI="ContactRelation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasGrade"/>
@@ -492,6 +584,10 @@
         <Class IRI="OrganizationMail"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="hasOffice"/>
+        <Class IRI="Office"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="hasQuiz"/>
         <Class IRI="https://schema.org/Quiz"/>
     </ObjectPropertyRange>
@@ -502,6 +598,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasResult"/>
         <Class IRI="QuizResult"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTutoring"/>
+        <Class IRI="TutoringTime"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasUnit"/>

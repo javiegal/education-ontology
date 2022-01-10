@@ -1,186 +1,185 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.intelligent-systems.org/acg/ontologies/2021/11/FormalSchooling"
+     xml:base="http://www.intelligent-systems.org/acg/ontologies/FormalSchooling#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.intelligent-systems.org/acg/ontologies/2021/11/FormalSchooling">
-    <Prefix name="" IRI="http://www.intelligent-systems.org/acg/ontologies/2021/11/FormalSchooling#"/>
+     ontologyIRI="http://www.intelligent-systems.org/acg/ontologies/FormalSchooling#">
+    <Prefix name="" IRI="http://www.intelligent-systems.org/acg/ontologies/2021/11/FormalSchooling"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#Agent"/>
+        <Class IRI="SchoolType"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Dedication"/>
+        <Class IRI="Agent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#FormalSchooling"/>
+        <Class IRI="Dedication"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Program"/>
+        <Class IRI="FormalSchooling"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SchoolType"/>
+        <Class IRI="Program"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Status"/>
+        <Class IRI="Status"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TimeCompleted"/>
+        <Class IRI="TimeCompleted"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasCompleted"/>
+        <ObjectProperty IRI="hasCompleted"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasDedication"/>
+        <ObjectProperty IRI="hasDedication"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasEducation"/>
+        <ObjectProperty IRI="hasEducation"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasProgram"/>
+        <ObjectProperty IRI="hasProgram"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasSchoolType"/>
+        <ObjectProperty IRI="hasSchoolType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasStatus"/>
+        <ObjectProperty IRI="hasStatus"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#AcademicProgram"/>
+        <NamedIndividual IRI="AcademicProgram"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Enrolled"/>
+        <NamedIndividual IRI="Enrolled"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#FormalSchoolingEx"/>
+        <NamedIndividual IRI="FormalSchoolingEx"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#FullTime"/>
+        <NamedIndividual IRI="FullTime"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#John"/>
+        <NamedIndividual IRI="John"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#PublicSchool"/>
+        <NamedIndividual IRI="PublicSchool"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SixYears"/>
+        <NamedIndividual IRI="SixYears"/>
     </Declaration>
     <ClassAssertion>
-        <Class IRI="#Program"/>
-        <NamedIndividual IRI="#AcademicProgram"/>
+        <Class IRI="Program"/>
+        <NamedIndividual IRI="AcademicProgram"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Status"/>
-        <NamedIndividual IRI="#Enrolled"/>
+        <Class IRI="Status"/>
+        <NamedIndividual IRI="Enrolled"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#FormalSchooling"/>
-        <NamedIndividual IRI="#FormalSchoolingEx"/>
+        <Class IRI="FormalSchooling"/>
+        <NamedIndividual IRI="FormalSchoolingEx"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Dedication"/>
-        <NamedIndividual IRI="#FullTime"/>
+        <Class IRI="Dedication"/>
+        <NamedIndividual IRI="FullTime"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Agent"/>
-        <NamedIndividual IRI="#John"/>
+        <Class IRI="Agent"/>
+        <NamedIndividual IRI="John"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#SchoolType"/>
-        <NamedIndividual IRI="#PublicSchool"/>
+        <Class IRI="SchoolType"/>
+        <NamedIndividual IRI="PublicSchool"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#TimeCompleted"/>
-        <NamedIndividual IRI="#SixYears"/>
+        <Class IRI="TimeCompleted"/>
+        <NamedIndividual IRI="SixYears"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasCompleted"/>
-        <NamedIndividual IRI="#FormalSchoolingEx"/>
-        <NamedIndividual IRI="#SixYears"/>
+        <ObjectProperty IRI="hasCompleted"/>
+        <NamedIndividual IRI="FormalSchoolingEx"/>
+        <NamedIndividual IRI="SixYears"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasDedication"/>
-        <NamedIndividual IRI="#FormalSchoolingEx"/>
-        <NamedIndividual IRI="#FullTime"/>
+        <ObjectProperty IRI="hasDedication"/>
+        <NamedIndividual IRI="FormalSchoolingEx"/>
+        <NamedIndividual IRI="FullTime"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasProgram"/>
-        <NamedIndividual IRI="#FormalSchoolingEx"/>
-        <NamedIndividual IRI="#AcademicProgram"/>
+        <ObjectProperty IRI="hasProgram"/>
+        <NamedIndividual IRI="FormalSchoolingEx"/>
+        <NamedIndividual IRI="AcademicProgram"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasSchoolType"/>
-        <NamedIndividual IRI="#FormalSchoolingEx"/>
-        <NamedIndividual IRI="#PublicSchool"/>
+        <ObjectProperty IRI="hasSchoolType"/>
+        <NamedIndividual IRI="FormalSchoolingEx"/>
+        <NamedIndividual IRI="PublicSchool"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasStatus"/>
-        <NamedIndividual IRI="#FormalSchoolingEx"/>
-        <NamedIndividual IRI="#Enrolled"/>
+        <ObjectProperty IRI="hasStatus"/>
+        <NamedIndividual IRI="FormalSchoolingEx"/>
+        <NamedIndividual IRI="Enrolled"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasEducation"/>
-        <NamedIndividual IRI="#John"/>
-        <NamedIndividual IRI="#FormalSchoolingEx"/>
+        <ObjectProperty IRI="hasEducation"/>
+        <NamedIndividual IRI="John"/>
+        <NamedIndividual IRI="FormalSchoolingEx"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasCompleted"/>
-        <Class IRI="#FormalSchooling"/>
+        <ObjectProperty IRI="hasCompleted"/>
+        <Class IRI="FormalSchooling"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasDedication"/>
-        <Class IRI="#FormalSchooling"/>
+        <ObjectProperty IRI="hasDedication"/>
+        <Class IRI="FormalSchooling"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasEducation"/>
-        <Class IRI="#Agent"/>
+        <ObjectProperty IRI="hasEducation"/>
+        <Class IRI="Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasProgram"/>
-        <Class IRI="#FormalSchooling"/>
+        <ObjectProperty IRI="hasProgram"/>
+        <Class IRI="FormalSchooling"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasSchoolType"/>
-        <Class IRI="#FormalSchooling"/>
+        <ObjectProperty IRI="hasSchoolType"/>
+        <Class IRI="FormalSchooling"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasStatus"/>
-        <Class IRI="#FormalSchooling"/>
+        <ObjectProperty IRI="hasStatus"/>
+        <Class IRI="FormalSchooling"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasCompleted"/>
-        <Class IRI="#TimeCompleted"/>
+        <ObjectProperty IRI="hasCompleted"/>
+        <Class IRI="TimeCompleted"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasDedication"/>
-        <Class IRI="#Dedication"/>
+        <ObjectProperty IRI="hasDedication"/>
+        <Class IRI="Dedication"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasEducation"/>
-        <Class IRI="#FormalSchooling"/>
+        <ObjectProperty IRI="hasEducation"/>
+        <Class IRI="FormalSchooling"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasProgram"/>
-        <Class IRI="#Program"/>
+        <ObjectProperty IRI="hasProgram"/>
+        <Class IRI="Program"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasSchoolType"/>
-        <Class IRI="#SchoolType"/>
+        <ObjectProperty IRI="hasSchoolType"/>
+        <Class IRI="SchoolType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasStatus"/>
-        <Class IRI="#Status"/>
+        <ObjectProperty IRI="hasStatus"/>
+        <Class IRI="Status"/>
     </ObjectPropertyRange>
 </Ontology>
 
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-

@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.intelligent-systems.org/acg/ontologies/2021/11/Outperforms"
+     xml:base="http://www.intelligent-systems.org/acg/ontologies/Outperforms#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.intelligent-systems.org/acg/ontologies/2021/11/Outperforms">
+     ontologyIRI="http://www.intelligent-systems.org/acg/ontologies/Outperforms#">
     <Prefix name="" IRI="http://www.intelligent-systems.org/acg/ontologies/2021/11/Outperforms"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -13,141 +13,141 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#Agent"/>
+        <Class IRI="Agent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Outperforms"/>
+        <Class IRI="Outperforms"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Place"/>
+        <Class IRI="Place"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ScoreDifference"/>
+        <Class IRI="ScoreDifference"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Subject"/>
+        <Class IRI="Subject"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasPlace"/>
+        <ObjectProperty IRI="hasPlace"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasScoreDiff"/>
+        <ObjectProperty IRI="hasScoreDiff"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasSubject"/>
+        <ObjectProperty IRI="hasSubject"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isBetter"/>
+        <ObjectProperty IRI="isBetter"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isWorse"/>
+        <ObjectProperty IRI="isWorse"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Boys"/>
+        <NamedIndividual IRI="Boys"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Five"/>
+        <NamedIndividual IRI="Five"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Girls"/>
+        <NamedIndividual IRI="Girls"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Mathematics"/>
+        <NamedIndividual IRI="Mathematics"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Maths_OECD"/>
+        <NamedIndividual IRI="Maths_OECD"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#OECD_Countries"/>
+        <NamedIndividual IRI="OECD_Countries"/>
     </Declaration>
     <ClassAssertion>
-        <Class IRI="#Agent"/>
-        <NamedIndividual IRI="#Boys"/>
+        <Class IRI="Agent"/>
+        <NamedIndividual IRI="Boys"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#ScoreDifference"/>
-        <NamedIndividual IRI="#Five"/>
+        <Class IRI="ScoreDifference"/>
+        <NamedIndividual IRI="Five"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Agent"/>
-        <NamedIndividual IRI="#Girls"/>
+        <Class IRI="Agent"/>
+        <NamedIndividual IRI="Girls"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Subject"/>
-        <NamedIndividual IRI="#Mathematics"/>
+        <Class IRI="Subject"/>
+        <NamedIndividual IRI="Mathematics"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Outperforms"/>
-        <NamedIndividual IRI="#Maths_OECD"/>
+        <Class IRI="Outperforms"/>
+        <NamedIndividual IRI="Maths_OECD"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Place"/>
-        <NamedIndividual IRI="#OECD_Countries"/>
+        <Class IRI="Place"/>
+        <NamedIndividual IRI="OECD_Countries"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasPlace"/>
-        <NamedIndividual IRI="#Maths_OECD"/>
-        <NamedIndividual IRI="#OECD_Countries"/>
+        <ObjectProperty IRI="hasPlace"/>
+        <NamedIndividual IRI="Maths_OECD"/>
+        <NamedIndividual IRI="OECD_Countries"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasScoreDiff"/>
-        <NamedIndividual IRI="#Maths_OECD"/>
-        <NamedIndividual IRI="#Five"/>
+        <ObjectProperty IRI="hasScoreDiff"/>
+        <NamedIndividual IRI="Maths_OECD"/>
+        <NamedIndividual IRI="Five"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasSubject"/>
-        <NamedIndividual IRI="#Maths_OECD"/>
-        <NamedIndividual IRI="#Mathematics"/>
+        <ObjectProperty IRI="hasSubject"/>
+        <NamedIndividual IRI="Maths_OECD"/>
+        <NamedIndividual IRI="Mathematics"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isBetter"/>
-        <NamedIndividual IRI="#Maths_OECD"/>
-        <NamedIndividual IRI="#Boys"/>
+        <ObjectProperty IRI="isBetter"/>
+        <NamedIndividual IRI="Maths_OECD"/>
+        <NamedIndividual IRI="Boys"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isWorse"/>
-        <NamedIndividual IRI="#Maths_OECD"/>
-        <NamedIndividual IRI="#Girls"/>
+        <ObjectProperty IRI="isWorse"/>
+        <NamedIndividual IRI="Maths_OECD"/>
+        <NamedIndividual IRI="Girls"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasPlace"/>
-        <Class IRI="#Outperforms"/>
+        <ObjectProperty IRI="hasPlace"/>
+        <Class IRI="Outperforms"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasScoreDiff"/>
-        <Class IRI="#Outperforms"/>
+        <ObjectProperty IRI="hasScoreDiff"/>
+        <Class IRI="Outperforms"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasSubject"/>
-        <Class IRI="#Outperforms"/>
+        <ObjectProperty IRI="hasSubject"/>
+        <Class IRI="Outperforms"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isBetter"/>
-        <Class IRI="#Outperforms"/>
+        <ObjectProperty IRI="isBetter"/>
+        <Class IRI="Outperforms"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isWorse"/>
-        <Class IRI="#Outperforms"/>
+        <ObjectProperty IRI="isWorse"/>
+        <Class IRI="Outperforms"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasPlace"/>
-        <Class IRI="#Place"/>
+        <ObjectProperty IRI="hasPlace"/>
+        <Class IRI="Place"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasScoreDiff"/>
-        <Class IRI="#ScoreDifference"/>
+        <ObjectProperty IRI="hasScoreDiff"/>
+        <Class IRI="ScoreDifference"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasSubject"/>
-        <Class IRI="#Subject"/>
+        <ObjectProperty IRI="hasSubject"/>
+        <Class IRI="Subject"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isBetter"/>
-        <Class IRI="#Agent"/>
+        <ObjectProperty IRI="isBetter"/>
+        <Class IRI="Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isWorse"/>
-        <Class IRI="#Agent"/>
+        <ObjectProperty IRI="isWorse"/>
+        <Class IRI="Agent"/>
     </ObjectPropertyRange>
 </Ontology>
 

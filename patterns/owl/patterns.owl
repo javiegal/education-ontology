@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.intelligent-systems.org/acg/ontologies/Patterns2#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.intelligent-systems.org/acg/ontologies/Patterns2#">
+    <Prefix name="" IRI="http://www.intelligent-systems.org/acg/ontologies/Patterns2#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="ContactRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ContinuousAssesment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CourseRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Credits"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Degree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Email"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FinalGrade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Office"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Semester"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Teacher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TutoringHour"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="BelongsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasAverage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasContact"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCredits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEmail"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasExamination"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasNextAssignment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasOffice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTutoring"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inSemester"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isTaughtBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Antonio_Latorre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Big_data"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Data_Science_Masters_Degree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="First"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="L_1500"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="4202"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="a.latorre@upm.es"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="Teacher"/>
+        <NamedIndividual IRI="Antonio_Latorre"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Course"/>
+        <NamedIndividual IRI="Big_data"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Degree"/>
+        <NamedIndividual IRI="Data_Science_Masters_Degree"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Semester"/>
+        <NamedIndividual IRI="First"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="TutoringHour"/>
+        <NamedIndividual IRI="L_1500"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Credits"/>
+        <NamedIndividual IRI="3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Office"/>
+        <NamedIndividual IRI="4202"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Email"/>
+        <NamedIndividual IRI="a.latorre@upm.es"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="BelongsTo"/>
+        <Class IRI="CourseRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasAverage"/>
+        <Class IRI="ContinuousAssesment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasContact"/>
+        <Class IRI="Teacher"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCredits"/>
+        <Class IRI="CourseRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasEmail"/>
+        <Class IRI="ContactRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasExamination"/>
+        <Class IRI="CourseRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasName"/>
+        <Class IRI="CourseRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasNextAssignment"/>
+        <Class IRI="ContinuousAssesment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasOffice"/>
+        <Class IRI="ContactRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTutoring"/>
+        <Class IRI="ContactRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inSemester"/>
+        <Class IRI="CourseRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isTaughtBy"/>
+        <Class IRI="CourseRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="BelongsTo"/>
+        <Class IRI="Degree"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasAverage"/>
+        <Class IRI="FinalGrade"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasContact"/>
+        <Class IRI="ContactRelation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCredits"/>
+        <Class IRI="Credits"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasEmail"/>
+        <Class IRI="Email"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasExamination"/>
+        <Class IRI="ContinuousAssesment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasName"/>
+        <Class IRI="Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasNextAssignment"/>
+        <Class IRI="ContinuousAssesment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasOffice"/>
+        <Class IRI="Office"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTutoring"/>
+        <Class IRI="TutoringHour"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="inSemester"/>
+        <Class IRI="Semester"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isTaughtBy"/>
+        <Class IRI="Teacher"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
