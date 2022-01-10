@@ -13,24 +13,182 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://dbpedia.org/ontology/</Import>
+    <Import>http://purl.org/ontology/bibo/</Import>
     <Import>https://schema.org/</Import>
+    <Import>https://www.w3.org/2003/01/geo/wgs84_pos#</Import>
     <Declaration>
-        <Class IRI="#EducationalMaterial"/>
+        <Class IRI="http://dbpedia.org/ontology/Academic"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Notes"/>
+        <Class IRI="http://dbpedia.org/ontology/AcademicSubject"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Slides"/>
+        <Class IRI="http://purl.org/ontology/bibo/AcademicArticle"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Student"/>
+        <Class IRI="http://purl.org/ontology/bibo/Article"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Teacher"/>
+        <Class IRI="http://purl.org/ontology/bibo/AudioDocument"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Video"/>
+        <Class IRI="http://purl.org/ontology/bibo/AudioVisualDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Film"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Image"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Manual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Map"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Note"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Report"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Slideshow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Thesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Webpage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CourseRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Grade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LMS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OrganizationMail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="QuizRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="QuizResult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Teacher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/CollegeOrUniversity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/CourseInstance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/EducationalOccupationalProgram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/EducationalOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/ElementarySchool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/HighSchool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/LearningResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/MiddleSchool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/Preschool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/Quiz"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/School"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="attends"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="courses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="covers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="enrolledIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGrade"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasLibrary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMail"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasQuiz"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasReference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasResult"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isTaughtBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="keeps"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="provides"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="takesCourse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="treats"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="usedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#expertIn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasProgram"/>
@@ -44,38 +202,231 @@
     <Declaration>
         <ObjectProperty IRI="#takesQuiz"/>
     </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://schema.org/alumni"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://schema.org/author"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
+    </Declaration>
     <SubClassOf>
-        <Class IRI="#EducationalMaterial"/>
+        <Class IRI="http://purl.org/ontology/bibo/AcademicArticle"/>
+        <Class IRI="http://purl.org/ontology/bibo/Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/ontology/bibo/Article"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/ontology/bibo/AudioDocument"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/ontology/bibo/AudioVisualDocument"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/ontology/bibo/Book"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/ontology/bibo/CollectedDocument"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
         <Class IRI="https://schema.org/LearningResource"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Notes"/>
-        <Class IRI="#EducationalMaterial"/>
+        <Class IRI="http://purl.org/ontology/bibo/DocumentPart"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Slides"/>
-        <Class IRI="#EducationalMaterial"/>
+        <Class IRI="http://purl.org/ontology/bibo/Film"/>
+        <Class IRI="http://purl.org/ontology/bibo/AudioVisualDocument"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Student"/>
-        <Class IRI="https://schema.org/Person"/>
+        <Class IRI="http://purl.org/ontology/bibo/Image"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Teacher"/>
-        <Class IRI="https://schema.org/Person"/>
+        <Class IRI="http://purl.org/ontology/bibo/LegalDocument"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Video"/>
-        <Class IRI="#EducationalMaterial"/>
+        <Class IRI="http://purl.org/ontology/bibo/Manual"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://schema.org/Article"/>
-        <Class IRI="#EducationalMaterial"/>
+        <Class IRI="http://purl.org/ontology/bibo/Manuscript"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://schema.org/Book"/>
-        <Class IRI="#EducationalMaterial"/>
+        <Class IRI="http://purl.org/ontology/bibo/Map"/>
+        <Class IRI="http://purl.org/ontology/bibo/Image"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/ontology/bibo/Note"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/ontology/bibo/Patent"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/ontology/bibo/PersonalCommunicationDocument"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/ontology/bibo/Proceedings"/>
+        <Class IRI="http://purl.org/ontology/bibo/Book"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/ontology/bibo/ReferenceSource"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/ontology/bibo/Report"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/ontology/bibo/Slideshow"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/ontology/bibo/Specification"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/ontology/bibo/Thesis"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.org/ontology/bibo/Webpage"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LMS"/>
+        <Class IRI="https://schema.org/LearningResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Student"/>
+        <Class IRI="http://dbpedia.org/ontology/Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Teacher"/>
+        <Class IRI="http://dbpedia.org/ontology/Academic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://schema.org/CollegeOrUniversity"/>
+        <Class IRI="https://schema.org/EducationalOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://schema.org/Course"/>
+        <Class IRI="https://schema.org/LearningResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://schema.org/ElementarySchool"/>
+        <Class IRI="https://schema.org/EducationalOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://schema.org/HighSchool"/>
+        <Class IRI="https://schema.org/EducationalOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://schema.org/MiddleSchool"/>
+        <Class IRI="https://schema.org/EducationalOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://schema.org/Preschool"/>
+        <Class IRI="https://schema.org/EducationalOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://schema.org/Quiz"/>
+        <Class IRI="https://schema.org/LearningResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://schema.org/School"/>
+        <Class IRI="https://schema.org/EducationalOrganization"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="attends"/>
+        <Class IRI="CourseRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="courses"/>
+        <Class IRI="CourseRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="covers"/>
+        <Class IRI="https://schema.org/Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="enrolledIn"/>
+        <Class IRI="Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGrade"/>
+        <Class IRI="CourseRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasLibrary"/>
+        <Class IRI="https://schema.org/EducationalOrganization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMail"/>
+        <Class IRI="http://dbpedia.org/ontology/Academic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasQuiz"/>
+        <Class IRI="QuizRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasReference"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasResult"/>
+        <Class IRI="QuizRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasUnit"/>
+        <Class IRI="https://schema.org/Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isTaughtBy"/>
+        <Class IRI="CourseRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="keeps"/>
+        <Class IRI="https://schema.org/Library"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="provides"/>
+        <Class IRI="https://schema.org/EducationalOrganization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="takesCourse"/>
+        <Class IRI="Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="treats"/>
+        <Class IRI="https://schema.org/Quiz"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="usedIn"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#expertIn"/>
+        <Class IRI="Teacher"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProgram"/>
         <Class IRI="https://schema.org/EducationalOrganization"/>
@@ -86,19 +437,111 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#preparesQuiz"/>
-        <Class IRI="#Teacher"/>
+        <Class IRI="Teacher"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#takesQuiz"/>
-        <Class IRI="#Student"/>
+        <Class IRI="Student"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
+        <Class IRI="https://schema.org/EducationalOrganization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://schema.org/alumni"/>
+        <Class IRI="https://schema.org/EducationalOrganization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://schema.org/author"/>
+        <Class IRI="https://schema.org/LearningResource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://schema.org/hasCourse"/>
+        <Class IRI="https://schema.org/EducationalOccupationalProgram"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://schema.org/hasCourseInstance"/>
+        <Class IRI="https://schema.org/Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="attends"/>
+        <Class IRI="https://schema.org/CourseInstance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="courses"/>
+        <Class IRI="https://schema.org/Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="covers"/>
+        <Class IRI="http://dbpedia.org/ontology/AcademicSubject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="enrolledIn"/>
+        <Class IRI="https://schema.org/EducationalOccupationalProgram"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGrade"/>
+        <Class IRI="Grade"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasLibrary"/>
+        <Class IRI="https://schema.org/Library"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMail"/>
+        <Class IRI="OrganizationMail"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasQuiz"/>
+        <Class IRI="https://schema.org/Quiz"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasReference"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasResult"/>
+        <Class IRI="QuizResult"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasUnit"/>
+        <Class IRI="Unit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isTaughtBy"/>
+        <Class IRI="Teacher"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="keeps"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="provides"/>
+        <Class IRI="OrganizationMail"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="takesCourse"/>
+        <Class IRI="CourseRelation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="treats"/>
+        <Class IRI="Unit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="usedIn"/>
+        <Class IRI="https://schema.org/CourseInstance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#expertIn"/>
+        <Class IRI="http://dbpedia.org/ontology/AcademicSubject"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasProgram"/>
         <Class IRI="https://schema.org/EducationalOccupationalProgram"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTeacher"/>
-        <Class IRI="#Teacher"/>
+        <Class IRI="Teacher"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#preparesQuiz"/>
@@ -106,11 +549,82 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#takesQuiz"/>
-        <Class IRI="https://schema.org/Quiz"/>
+        <Class IRI="QuizRelation"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
+        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://schema.org/alumni"/>
+        <Class IRI="Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://schema.org/author"/>
+        <Class IRI="http://dbpedia.org/ontology/Academic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://schema.org/hasCourse"/>
+        <Class IRI="https://schema.org/Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://schema.org/hasCourseInstance"/>
+        <Class IRI="https://schema.org/CourseInstance"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#Point</IRI>
+        <Literal>
+Uniquely identified by lat/long/alt. i.e.
+
+spaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),
+  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).
+
+sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).
+  </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#Point</IRI>
+        <Literal>A point, typically described using a coordinate system relative to Earth, such as WGS84.
+  </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#Point</IRI>
+        <Literal>point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing</IRI>
+        <Literal>Anything with spatial extent, i.e. size, shape, or position.
+ e.g. people, places, bowling balls, as well as abstract areas like cubes.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing</IRI>
+        <Literal>SpatialThing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#location</IRI>
+        <Literal>The relation between something and the point,
+ or other geometrical thing in space, where it is.  For example, the realtionship between
+ a radio tower and a Point with a given lat and long.
+ Or a relationship between a park and its outline as a closed arc of points, or a road and
+ its location as a arc (a sequence of points).
+ Clearly in practice there will be limit to the accuracy of any such statement, but one would expect
+ an accuracy appropriate for the size of the object and uses such as mapping .
+ </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#location</IRI>
+        <Literal>location</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
